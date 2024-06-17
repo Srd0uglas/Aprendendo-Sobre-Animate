@@ -1,0 +1,60 @@
+
+/* Objetivo: Fazer o box se mexer  */
+
+#box{
+    /* Delimitando o Tamanho da caixa */
+    width: 200px;
+    height: 200px;
+    /* Definindo a Cor da caixa */
+    background-color: yellow;
+    /* Propriedade que chama o keyframe  */
+    animation-name: Mover-Box;
+    /* Tempo que a animação va durar */
+    animation-duration: 2s;
+    /* Suavização da transição no início e final */
+    animation-timing-function: ease-in-out;
+    /* Quantidade de vezes que a transição vai acontecer */
+    animation-iteration-count: 2;
+    /* Atraso para a transição acontecer */
+    transition-delay: 1s;
+    /* faz a animação ir e voltar */
+    animation-direction: alternate ;
+}
+
+
+
+
+#box2{
+    /* Delimitando o Tamanho da caixa */
+    width: 200px;
+    height: 200px;
+    /* Definindo a Cor da caixa */
+    background-color: yellow;
+    margin-top: 5px;
+    animation: Mover-Box2 2s infinite alternate ease-in-out ;
+}
+
+
+
+
+@keyframes Mover-Box{
+    from{
+        /* Ponto inicial */
+        transform: translateX(0);
+    }
+    /* Para onde ele está indo */
+    to{
+        transform: translateX(200px);
+    }
+}
+
+@keyframes Mover-Box2{
+    from{
+        /* Ponto inicial */
+        transform: translateX(0);
+    }
+    /* Para onde ele está indo */
+    to{
+        transform: translateX(200px);
+    }
+}
